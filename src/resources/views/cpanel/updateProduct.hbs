@@ -1,0 +1,32 @@
+<div class="container mt-4">
+    <form method="post" action="../cpanel/edit?_method=PUT">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Tên sản phẩm</label>
+            <input type="text" class="form-control" name="name" value="{{docs.name}}">
+            <input type="hidden" class="form-control" name="id" value="{{docs._id}}">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Mô tả</label>
+            <input type="text" class="form-control" name="description" value="{{docs.description}}">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Giá</label>
+            <input type="number" class="form-control" name="prince" value="{{docs.prince}}">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">ID-Photo</label>
+            <input type="text" class="form-control" name="images" value="{{docs.images}}">
+        </div>
+        <div class="form-group">
+            <select class="form-control" name="star" value="{{docs.star}}">
+                <option value="0-start"> 0 sao</option>
+                <option value="1-start"> 1 sao</option>
+                <option value="2-start"> 2 sao</option>
+                <option value="3-start"> 3 sao</option>
+                <option value="4-start"> 4 sao</option>
+                <option value="5-start"> 5 sao</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Sửa</button>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+<div class="container mt-4">
+    <form method="post" action="../cpanel/query">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Tên sản phẩm</label>
+            <input type="text" class="form-control" name="name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Mô tả</label>
+            <input type="text" class="form-control" name="description">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Giá</label>
+            <input type="number" class="form-control" name="prince">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">ID-Photo</label>
+            <input type="text" class="form-control" name="images">
+        </div>
+        <div class="form-group">
+            <select class="form-control" name="star">
+                <option value="0-start"> 0 sao</option>
+                <option value="1-start"> 1 sao</option>
+                <option value="2-start"> 2 sao</option>
+                <option value="3-start"> 3 sao</option>
+                <option value="4-start"> 4 sao</option>
+                <option value="5-start"> 5 sao</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Thêm Sản Phẩm</button>
+    </form>
+</div>

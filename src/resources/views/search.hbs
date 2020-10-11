@@ -1,8 +1,14 @@
-<form class="mt-5">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<div class="container">
+  <ul>
+    {{#each docs}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <form class="mt-5" action="../search" method="GET">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nhập nội dung tìm kiếm</label>
+      <input type="text" class="form-control" name="keyword" id="exampleInputEmail1">
+    </div>
+    <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
+  </form>
+</div>

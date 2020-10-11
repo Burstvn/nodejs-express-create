@@ -1,0 +1,86 @@
+<div class="product-area pb-95">
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title-3">
+                            <h2>For men</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="tab-content">
+                            <div id="for-men" class="tab-pane active show" role="tabpanel">
+                                <div class="row">
+                                    <div class="product-active-3 owl-carousel">
+
+                                        {{#each docs}}
+                                        <div class="col">
+                                            <!-- single-product-wrap start -->
+                                            <div class="single-product-wrap">
+                                                <div class="product-image">
+                                                    <a href="../Courses/{{this.slug}}">
+                                                        <img class="primary-image" src="img/product/{{this.images}}.jpg"
+                                                            alt="{{this.slug}}">
+                                                        <img class="secondary-image"
+                                                            src="img/product/{{this.images}}.jpg" alt="{{this.slug}}">
+                                                    </a>
+                                                    <div class="label-product">-10% off</div>
+                                                </div>
+                                                <div class="product_desc">
+                                                    <div class="product_desc_info">
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                        <h4><a class="product_name"
+                                                                href="single-product.html">{{this.name}}</a></h4>
+                                                        <div class="manufacturer"><a
+                                                                href="single-product.html">{{this.description}}</a>
+                                                        </div>
+                                                        <div class="price-box">
+                                                            <span class="new-price">{{this.prince}}$</span>
+                                                            <span class="old-price">{{this.prince}}$</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-actions">
+                                                        <ul class="add-actions-link">
+                                                            <li class="add-cart"><a href="#"><i
+                                                                        class="ion-android-cart"></i> Add to
+                                                                    cart</a></li>
+                                                            <li><a class="quick-view" data-toggle="modal"
+                                                                    data-target="#exampleModalCenter" href="#"><i
+                                                                        class="ion-android-open"></i></a></li>
+                                                            <li><a class="links-details"
+                                                                    href="../Courses/{{this.slug}}"><i
+                                                                        class="ion-clipboard"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single-product-wrap end -->
+                                        </div>
+                                        {{/each}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <!--single-banner-box start -->
+                <div class="single-banner-box">
+                    <a href="#"><img src="img/banner/8.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

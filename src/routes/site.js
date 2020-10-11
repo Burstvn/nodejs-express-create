@@ -3,7 +3,7 @@ const router = express.Router()
 const siteController = require('../app/controllers/SiteController')
 
 //[GET] /search
-router.get('/seach', siteController.seach)
+router.get('/search', siteController.search)
 //[GET] /home
 router.get('/', siteController.home)
 
